@@ -21,7 +21,19 @@ console.log("------- Cuboid Constructor: Class --------");
 // }
 
 //CLASS
-
+class CuboidMakerClass{
+    constructor(attrs){
+        this.cLength = attrs.cLength,
+        this.cWidth = attrs.cWidth,
+        this.cHeight = attrs.cHeight
+    }
+    volume(){
+        return this.cLength * this.cWidth * this.cHeight;
+    }
+    surfaceArea(){
+        return 2 * (this.cLength * this.cWidth + this.cLength * this.cHeight + this.cWidth * this.cHeight); 
+    }
+}
 
 
 
@@ -74,13 +86,18 @@ console.log("------- Cuboid Constructor: Class --------");
 
 
 //CLASS
+const cuboidTwo = new CuboidMakerClass ({
+    cLength: 4,
+    cWidth: 5,
+    cHeight:5
+});
 
 
 
 
 // Test your volume and surfaceArea methods by uncommenting the logs below:
-console.log(cuboid.volume()); // 100
-console.log(cuboid.surfaceArea()); // 130
+console.log(cuboidTwo.volume()); // 100
+console.log(cuboidTwo.surfaceArea()); // 130
 
 
 
