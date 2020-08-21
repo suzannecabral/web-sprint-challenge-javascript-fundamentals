@@ -5,7 +5,7 @@
 /* == Step 1: Base Constructor ==
   Create a constructor function named CuboidMaker that accepts properties for length, width, and height
 */
-console.log("------- Cuboid Constructor --------");
+console.log("------- Cuboid Constructor: Prototype --------");
 
 function CuboidMaker(attrs){
   this.cuboidLength = attrs.cuboidLength,
